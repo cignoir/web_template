@@ -1,0 +1,88 @@
+.tategaki { margin-right: auto; margin-left: auto; padding-left: 15px; padding-right: 15px; }
+.tategaki:before, .container:after, .tategaki:after { content: " "; display: table; }
+.tategaki:after { clear: both; }
+@media (min-width: 600px) { .tategaki { width: 585px; } }
+@media (min-width: 840px) { .tategaki { width: 819px; } }
+@media (min-width: 960px) { .tategaki { width: 936px; } }
+@media (min-width: 1280px) { .tategaki { width: 1248px; } }
+.tategaki { margin: 0 2em; }
+.tategaki p { margin: 0 0 1em 0; text-indent: 1em; font-size: 18px; line-height: 1.8; text-align: justify; word-break: break-word; }
+.tategaki .midashi { text-align: center; margin: 0 0 2em 0; font-size: 1.5em; font-weight: bold; }
+@media (min-width: 600px) {
+  .tategaki {
+    -webkit-writing-mode: vertical-rl;
+    -moz-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    -ms-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    column-size: 2;
+    -moz-column-size: 2;
+    -webkit-column-size: 2;
+    -ms-column-size: 2;
+    column-gap: 3em;
+    -moz-column-gap: 3em;
+    -webkit-column-gap: 3em;
+    -ms-column-gap: 3em;
+    max-width: 400px;
+    min-height: 20em;
+    max-height: 40em;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 600px) { .tategaki .midashi { margin: 0 0 0 2em; border: none; font-size: 1.7em; text-align: left; column-span: all; -moz-column-span: all; -webkit-column-span: all; -ms-column-span: all; }
+  .tategaki p { margin: 0 0 0 1em; } }
+.skrollable { position: fixed; z-index: 100; }
+.skrollr-mobile .skrollable { position: absolute; }
+.skrollable .skrollable { position: absolute; }
+.skrollable .skrollable .skrollable { position: static; }
+
+section { padding: 3em 0; }
+
+body {
+  font-family: "秀英明朝 M JIS2004", "DNPShueiMinPr6N-M", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝";
+  font-weight: bold;
+  overflow-x: hidden;
+}
+
+ul > li {
+  list-style: none;
+  font-size: 1.2em;
+  line-height: 1.8;
+}
+
+a {
+  transition-property: all;
+  transition: 0.3s linear;
+}
+
+#kirikane { opacity: 0.4; }
+
+.footer {
+  background: #DFDFDF;
+  color: #667189;
+  padding: 1rem;
+}
+
+.light-gray {
+  background: #ECECEC;
+}
+
+.shikaku {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	background: #DDDDDD;
+}
+
+.card {
+  border: none;
+}
+
+.max-width-half {
+  max-width: 50%;
+}
+
+.required {
+  color: red;
+}
